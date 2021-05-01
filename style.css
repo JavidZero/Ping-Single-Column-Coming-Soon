@@ -1,0 +1,200 @@
+:root {
+
+    /* Colors */
+
+    /* Primary */
+
+    --blue: hsl(223, 87%, 63%);
+
+    /* Secondary */
+
+    --pale-blue: hsl(223, 100%, 88%);
+    --light-red: hsl(354, 100%, 66%);
+
+    /* Neutral */
+
+    --gray: hsl(0, 0%, 59%);
+    --very-dark-blue: hsl(209, 33%, 12%);
+
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Libre Franklin', sans-serif;
+    font-weight: 300;
+    font-size: 2rem;
+}
+
+.container {
+    max-width: 144rem;
+    width: 100%;
+    padding: 4rem 2rem 2rem 0;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.logo {
+    margin-bottom: 2rem;
+}
+
+.text {
+    text-align: center;
+}
+
+.text h2 {
+    font-size: 4rem;
+    font-weight: 300;
+    color: var(--gray);
+    margin-bottom: 1.5rem;
+}
+
+.text h2 span {
+    font-weight: 700;
+    color: var(--very-dark-blue);
+}
+
+.text p {
+    font-size: 1.8rem;
+    font-weight: 300;
+    color: var(--very-dark-blue);
+    margin-bottom: 2rem;
+}
+
+.form-box {
+    max-width: 64rem;
+    margin: 0 auto;
+    margin-bottom: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.form-control {
+    width: 67%;
+    text-align: left;
+}
+
+
+.form-control small{
+    font-size: 1.2rem;
+    font-style: italic;
+    color: var(--light-red);
+    padding-left: 2rem;
+    opacity: 0;
+}
+
+.form-control.error small{
+    opacity: 1;
+}
+
+.form-input {
+    width: 30%;
+}
+
+
+.form-item {
+    width: 100%;
+    height: 5rem;
+    padding: 2rem;
+    border: none;
+    border-radius: 2.5rem;
+}
+
+.form-item:active,
+.form-item:focus{
+    outline: none;
+}
+
+.email {
+    border: 1px solid rgba(0, 0, 0, .2);
+    outline: none;
+}
+
+.form-control.error .email {
+    border: 1px solid var(--light-red);
+}
+
+.email::placeholder {
+    color: var(--gray)
+}
+
+.btn {
+    background-color: var(--blue);
+    color: white;
+}
+
+.illustration {
+    max-width: 64rem;
+    margin: 0 auto;
+}
+
+.illustration img {
+    width: 100%;
+    height: 39rem;
+}
+
+
+.socials ul {
+    list-style: none;
+    margin-bottom: 2rem;
+}
+
+.socials ul li {
+    display: inline-block;
+    margin: 0 .2rem;
+    color: var(--blue);
+}
+
+.socials ul li a{
+    text-decoration: none;
+    color: var(--blue);
+}
+
+.socials p {
+    font-size: 1.4rem;
+}
+
+@media only screen and (max-width: 650px){
+    .container {
+        width: 37.5rem;
+    }
+
+    .form-box {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form-control {
+        width: 100%;
+        text-align: center;
+    }
+
+
+    .form-control small{
+        opacity: 1;
+        display: none;
+        margin-bottom: 1rem;
+    }
+
+    .form-control.error small{
+        display: block;
+    }
+
+    .form-input {
+        width: 100%;
+    }
+
+}

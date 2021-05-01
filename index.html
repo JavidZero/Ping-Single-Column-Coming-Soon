@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Ping coming soon page</title>
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap" rel="stylesheet">
+
+  <script src="https://kit.fontawesome.com/5d47e7a5c3.js" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    .front-end {
+      width: 100%;
+      height: 32px;
+      background-color: black;
+      position: relative;
+    }
+  
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+      color: white;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  
+    .attribution a,
+    .attribution span {
+      color: hsl(227, 45%, 77%);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="logo">
+      <img src="images/logo.svg" alt="Logo">
+    </div>
+    <div class="text">
+      <h2>We are launching <span>soon!</span></h2>
+      <p>Subscribe and get notified</p>
+    </div>
+
+    <form action="#" class="form-box">
+      <div class="form-control">
+        <input type="email" class="email form-item" placeholder="Enter your Email">
+        <small>Please provide a valid email address</small>
+      </div>
+      <div class="form-input">
+        <button type="submit"  class="btn form-item">Notify me</button>
+      </div>
+    </form>
+
+    <div class="illustration">
+      <img src="images/illustration-dashboard.png" alt="">
+    </div>
+
+    <div class="socials">
+      <ul>
+        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+      </ul>
+
+      <p>&copy; Copyright Ping. All rights reserved.</p>
+    </div>
+
+  </div>
+
+  <footer class="front-end">
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <span>Javid Alizada</span>.
+    </p>
+  </footer>
+
+</body>
+<script src="app.js"></script>
+</html>
